@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="portfolio, personal info" />
+    <meta name="keywords" content="portfolio, cv" />
+    <meta />
+    <!-- 
+    
+    Website display name
+    
+    -->
+    <title>ACE</title>
+
+    <!--
+    
+    favicon
+    
+    -->
+    <link rel="icon" href="resources/common/logo.png" />
+    <style>
+      .image {
+        border-radius: 100%;
+        width: 300px;
+        margin-left: 100px;
+        margin-bottom: 50px;
+        padding: 90px;
+      }
+      .heading {
+        font-size: 64px;
+        margin-left: 50px;
+      }
+      .cv {
+        border: 1px solid black;
+        width: 90%;
+        margin: 2% 0 2% 3%;
+        padding: 2% 2% 4% 2%;
+      }
+      .text {
+        font-family: "Cantarell", serif;
+        font-size: 25px;
+      }
+      .icon {
+        width: 30px;
+        height: 30px;
+        margin-top: 25px;
+        margin-right: 20px;
+        margin-left: 150px;
+      }
+      .mini-heading {
+        font-size: 40px;
+      }
+      .align {
+        margin-top: 25px;
+        margin-right: 20px;
+        margin-left: 150px;
+      }
+    </style>
+    <!--
+    
+    external css
+    
+    -->
+    <link rel="stylesheet" href="common.css" />
+  </head>
+  <body>
+    <!--
+    
+    nav bar
+    
+    -->
+    <nav>
+      <div id="nav">
+        <div class="nav-main">
+          <div class="nav" style="margin-left: 8px">
+            <img
+              src="resources/common/logo.png"
+              alt="logo"
+              style="width: 81px; height: 103px"
+            />
+            <h1 class="aboreto logo-txt">ACE</h1>
+            <!--
+            
+            slogan
+            
+            -->
+            <h1 class="aboreto slogan">
+              MASTERING
+              <span style="color: #ffffff"
+                >TIME,<br />
+                REDEFINING</span
+              ><br />
+              STYLE.
+            </h1>
+          </div>
+          <!--
+          
+          nav buttons
+          
+          -->
+          <div class="nav-buttons">
+            <a href="index.html" class="aboreto navnav">HOME</a>
+            <a href="blog.html" class="aboreto navnav">BLOG</a>
+            <a href="product.html" id="navnav" class="aboreto navnav"
+              >PRODUCTS</a
+            >
+            <a href="research.html" id="navnav" class="aboreto navnav"
+              >RESEARCH</a
+            >
+            <a href="about_us.html" id="navnav" class="aboreto navnav"
+              >ABOUT US</a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="cv">
+      <h1 class="aboreto heading">SHREEYA TANDUKAR</h1>
+      <!-- main flex box -->
+      <div style="display: flex; flex-direction: column">
+        <div
+          style="
+            display: flex; /*flex to display the text on the side of the photo */
+            justify-content: space-around;
+            align-items: center;
+          "
+        >
+          <img class="image" src="resources/about_us/shreeya.jpg" alt="" />
+          <p class="text" style="width: 700px; padding-bottom: 30px">
+            I, Shreeya Tandukar, am someone who is deeply dedicated to
+            maintaining professionalism, with strong time management and a solid
+            work ethic. I value honesty and integrity, ensuring that I complete
+            tasks on time and with accuracy. I believe my focus and
+            dependability allow me to contribute effectively. I appreciate the
+            balance between being a steady, quiet presence and the confidence
+            that comes from fulfilling my responsibilities with
+            integrity and reliability.
+          </p>
+        </div>
+        <div style="display: flex; justify-content: space-between">
+          <!--flex to display the icon and skkill info in a column  -->
+          <div style="display: flex; flex-direction: column">
+            <div style="display: flex">
+              <img class="icon" src="resources/about_us/phone.png" alt="" />
+              <p class="text">9847360542</p>
+            </div>
+            <div style="display: flex">
+              <img class="icon" src="resources/about_us/mail.png" alt="" />
+              <p class="text">tandukar.shreeya56@gmail.com</p>
+            </div>
+            <div style="display: flex">
+              <img
+                class="icon"
+                src="resources/about_us/location pin.png"
+                alt=""
+              />
+              <p class="text">Kirtipur,Kathmandu</p>
+            </div>
+            <div style="display: flex; flex-direction: column">
+              <p class="mini-heading text align">SKILLS</p>
+              <p class="align text">
+                Communication- ⭐⭐⭐ <br /><br />
+                Web Development(HTML, CSS)- ⭐⭐⭐ <br /><br />
+                Problem solving- ⭐⭐⭐ <br /><br />
+                Multi-tasking- ⭐⭐⭐⭐ <br />
+              </p>
+            </div>
+          </div>
+          <!-- flex to display the info next to the icon column in a column -->
+          <div
+            style="display: flex; flex-direction: column; padding-right: 50px"
+          >
+            <div class="mini-heading text">EDUCATION</div>
+            <p class="text">
+              High School Degree<br />
+              DAV COLLEGE/Lalitpur/2022-2024
+            </p>
+            <p class="text">
+              BSc(Hons) Computing<br />
+              Islington College/Kathmandu/2024-Present
+            </p>
+            <br /><br /><br />
+            <div class="mini-heading text">TRAINING/CERTIFICATION</div>
+            <p class="text">
+              Brilliant kidz And teenz-Miss Catwalk<br />2016<br /><br />
+              Global Prociency Pathway Course<br />Islington College/2024
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

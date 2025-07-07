@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="luxury watch, product page, watcg description"
+    />
+    <meta name="keywords" content="Watch, luxury,products" />
+    <meta />
+    <!-- 
+    
+    Website display name
+    
+    -->
+    <title>ACE</title>
+
+    <!--
+    
+    favicon
+    
+    -->
+
+    <link rel="icon" href="resources/common/logo.png" />
+    <!--
+    
+    internal css
+    
+    -->
+    <style>
+      .productpg-template {
+        width: 390px;
+        height: 447px;
+        background-color: transparent;
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        align-items: center;
+        margin: 50px 155px;
+      }
+      /* all about the products */
+      .product-image {
+        width: 281px;
+        height: 476px;
+        transition: ease-in-out 1s;
+      }
+      .product-image:hover {
+        width: 291px;
+        height: 486px;
+        transition: ease-in-out 1s;
+      }
+      .prodpg-name {
+        font-family: "Aboreto", serif;
+        position: absolute;
+        text-align: center;
+        top: 20px;
+      }
+      .prodpg-desc {
+        font-weight: bold;
+        line-height: 25px;
+        text-align: center;
+      }
+      .pricing {
+        font-family: "Aboreto", serif;
+        font-size: 28px;
+      }
+      .disc-pricing {
+        font-family: "Aboreto", serif;
+        font-size: 28px;
+      }
+      del {
+        color: #8b0000;
+      }
+      .prod-section {
+        padding-top: 70px;
+        height: 800px;
+      }
+      /* inquiry button */
+      .inquire {
+        color: white;
+        background-color: #000000;
+        font-size: 20px;
+        padding: 5px 20px;
+        border-radius: 10px;
+        border: 0;
+        margin-top: 20px;
+        z-index: 1;
+      }
+      #inq-buts {
+        left: 120px;
+      }
+      #inq-buts :hover {
+        background-color: white;
+        color: black;
+        border: 1px solid #000000;
+      }
+    </style>
+    <!--
+    
+    external css
+    
+    -->
+
+    <link rel="stylesheet" href="common.css" />
+  </head>
+  <body>
+    <!--
+    
+    nav bar
+    
+    -->
+    <nav>
+      <div id="nav">
+        <div class="nav-main">
+          <div class="nav" style="margin-left: 8px">
+            <img
+              src="resources/common/logo.png  "
+              alt="logo"
+              style="width: 81px; height: 103px"
+            />
+            <h1 class="aboreto logo-txt">ACE</h1>
+            <!--
+            
+            slogan
+            
+            -->
+            <h1 class="aboreto slogan">
+              MASTERING
+              <span style="color: #ffffff"
+                >TIME,<br />
+                REDEFINING</span
+              ><br />
+              STYLE.
+            </h1>
+          </div>
+          <!--
+          
+          nav buttons
+          
+          -->
+          <div class="nav-buttons">
+            <a href="index.html" class="aboreto navnav">HOME</a>
+            <a href="blog.html" class="aboreto navnav">BLOG</a>
+            <a href="product.html" id="navnav" class="aboreto current"
+              >PRODUCTS</a
+            >
+            <a href="research.html" id="navnav" class="aboreto navnav"
+              >RESEARCH</a
+            >
+            <a href="about_us.html" id="navnav" class="aboreto navnav"
+              >ABOUT US</a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!--
+    
+    displayed products
+    
+    -->
+    <div
+      style="display: flex; justify-content: space-between"
+      class="prod-section"
+    >
+      <div class="productpg-template">
+        <h1 class="prodpg-name">CASINO TOURBILLON</h1>
+        <img
+          class="product-image"
+          src="resources/product/Casino tourbillion.avif"
+          alt="tourbillion"
+        />
+
+        <div class="pricing"><del>$300,000</del></div>
+        <div class="disc-pricing">$280,000</div>
+        <div class="prodpg-desc aboreto">
+          CASE: 44MM, 18K ROSE GOLD 30M WATER-RESISTANT <br /><br />DIAL: BLACK
+          ONYX WITH A FUNCTIONAL ROULETTE WHEEL
+        </div>
+        <!-- redirecting anchored button -->
+        <a id="inq-buts" href="casino_tourbillon.html"
+          ><button class="inquire aboreto">VIEW DETAILS</button></a
+        >
+      </div>
+      <div class="productpg-template">
+        <h1 class="prodpg-name">BUGATTI TOURBILLON</h1>
+        <img
+          style="padding-top: 10px"
+          class="product-image"
+          src="resources/product/buggaa.avif"
+          alt="Bugatti Tourbillon"
+        />
+
+        <div class="pricing"><del>$380,000</del></div>
+        <div class="disc-pricing">$340,000</div>
+        <div class="prodpg-desc aboreto">
+          CASE: 54MM X 44MM, TITANIUM, 30M WATER-RESISTANT
+          <br /><br />
+          DIAL: SAPPHIRE CRYSTAL WITH A MINIATURE W16 ENGINE BLOCK AUTOMATON
+        </div>
+        <!-- redirecting anchored button -->
+        <a id="inq-buts" href="bugatti_tourbillon.html"
+          ><button class="inquire aboreto">VIEW DETAILS</button></a
+        >
+      </div>
+    </div>
+    <div
+      style="display: flex; justify-content: space-between"
+      class="prod-section"
+    >
+      <div class="productpg-template">
+        <h1 class="prodpg-name">
+          TWIN TURBO <br />
+          FURIOUS BAUGETTE
+        </h1>
+        <img
+          class="product-image"
+          src="resources/product/twin turbo.avif"
+          alt="tourbillion"
+        />
+
+        <div class="pricing"><del>$1,400,000</del></div>
+        <div class="disc-pricing">$1,300,000</div>
+        <div class="prodpg-desc aboreto">
+          CASE: 57MM X 52MM, 18K ROSE GOLD, SET WITH 344 BAGUETTE-CUT DIAMONDS
+          (18.32 CARATS), WATER-RESISTANT TO 30M <br /><br />
+          DIAL: SKELETONIZED WITH DIAMOND ACCENTS
+        </div>
+        <!-- redirecting anchored button -->
+        <a id="inq-buts" href="twin_turbo.html"
+          ><button class="inquire aboreto">VIEW DETAILS</button></a
+        >
+      </div>
+      <div class="productpg-template">
+        <h1 class="prodpg-name">BRILLIANT SKELETON NORTHERN LIGHTS</h1>
+        <img
+          style="padding-top: 10px"
+          class="product-image"
+          src="resources/product/brilliant skeleton.avif"
+          alt="Bugatti Tourbillon"
+        />
+
+        <div class="pricing"><del>$100,00</del></div>
+        <div class="disc-pricing">$94,000</div>
+        <div class="prodpg-desc aboreto">
+          CASE: 44MM, 18K ROSE GOLD, WATER-RESISTANT TO 30M
+          <br /><br />
+          DIAL: SKELETONIZED DIAL WITH VIBRANT, AURORA-INSPIRED COLORS (RED,
+          GREEN, ETC.)
+        </div>
+        <!-- redirecting anchored button -->
+        <a id="inq-buts" href="brilliant_skeleton.html"
+          ><button class="inquire aboreto">VIEW DETAILS</button></a
+        >
+      </div>
+    </div>
+    <div
+      style="display: flex; justify-content: space-between"
+      class="prod-section"
+    >
+      <div class="productpg-template">
+        <h1 class="prodpg-name">ASTRONOMIA ART</h1>
+        <img
+          class="product-image"
+          src="resources/product/astronomia art.avif"
+          alt="tourbillion"
+        />
+
+        <div class="pricing"><del>$700,000</del></div>
+        <div class="disc-pricing">$690,000</div>
+        <div class="prodpg-desc aboreto">
+          CASE: 50MM, 18K ROSE GOLD/WHITE GOLD, SAPPHIRE CRYSTAL <br /><br />
+          DIAL: HAND-ENGRAVED AND PAINTED WITH THEMATIC DESIGNS
+        </div>
+        <!-- redirecting anchored button -->
+        <a id="inq-buts" href="astronomia_art.html"
+          ><button class="inquire aboreto">VIEW DETAILS</button></a
+        >
+      </div>
+      <div class="productpg-template">
+        <h1 class="prodpg-name">EPIC CHRONO 44MM</h1>
+        <img
+          style="padding-top: 10px"
+          class="product-image"
+          src="resources/product/epic.avif"
+          alt="Bugatti Tourbillon"
+        />
+
+        <div class="pricing"><del>$380,000</del></div>
+        <div class="disc-pricing">$340,000</div>
+        <div class="prodpg-desc aboreto">
+          CASE: 44MM TITANIUM WITH BLUE PVD, WATER-RESISTANT TO 200M <br />
+          <br />
+          DIAL: BLUE WITH SKELETONIZED HANDS AND CHRONOGRAPH COUNTERS.
+        </div>
+        <!-- redirecting anchored button -->
+        <a id="inq-buts" href="epic.html"
+          ><button class="inquire aboreto">VIEW DETAILS</button></a
+        >
+      </div>
+    </div>
+
+    <!-- 
+      
+      Footer 
+      
+      -->
+    <footer>
+      <div class="footer">
+        <div style="display: flex; flex-direction: column; margin-left: 20px">
+          <div style="display: flex">
+            <img
+              src="resources/common/logo.png"
+              alt="logo"
+              style="height: 93px; width: 81px; margin-top: 10px"
+            />
+            <h1 class="aboreto footer-logo">ACE</h1>
+          </div>
+          <!-- 
+            
+            icon columns
+            
+            -->
+          <div class="icon-column">
+            <a href=""
+              ><img src="resources/common/Instagram Circle.png" alt=""
+            /></a>
+            <a href=""><img src="resources/common/Facebook.png" alt="" /></a>
+            <a href=""><img src="resources/common/X.png" alt="" /></a>
+            <a href=""><img src="resources/common/LinkedIn 2.png" alt="" /></a>
+          </div>
+        </div>
+        <div style="display: flex">
+          <!-- 
+            
+            copy right text
+            
+            -->
+          <h1 class="aboreto copyright" style="align-self: flex-end">
+            ©2025-ACE | ALL RIGHTS RESERVED
+          </h1>
+        </div>
+        <!-- 
+          
+          footer navs
+          
+          -->
+        <div
+          style="
+            display: flex;
+            gap: 81px;
+            margin-right: 103px;
+            margin-top: 30px;
+          "
+        >
+          <div
+            class="footer-links"
+            style="display: flex; flex-direction: column"
+          >
+            <div class="footer-topic">Explore</div>
+            <div class="footer-content">
+              <a class="footer-topic-links" href="research.html">Research</a>
+            </div>
+            <div class="footer-content">
+              <a class="footer-topic-links" href="about_us.html">Our Team</a>
+            </div>
+            <div class="footer-content">
+              <a class="footer-topic-links" href="">Tips</a>
+            </div>
+          </div>
+          <div
+            class="footer-links"
+            style="display: flex; flex-direction: column"
+          >
+            <div class="footer-topic">Company</div>
+            <div class="footer-content">
+              <a class="footer-topic-links" href="about_us.html">About us</a>
+            </div>
+            <div class="footer-content">
+              <a class="footer-topic-links" href="about_us.html">Contact us</a>
+            </div>
+          </div>
+          <div
+            class="footer-links"
+            style="display: flex; flex-direction: column"
+          >
+            <div class="footer-topic">Policy</div>
+            <div class="footer-content">
+              <a class="footer-topic-links" href="">Terms & Condition</a>
+            </div>
+            <div class="footer-content">
+              <a class="footer-topic-links" href="">Privacy</a>
+            </div>
+            <div class="footer-content">
+              <a class="footer-topic-links" href="">FAQ</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

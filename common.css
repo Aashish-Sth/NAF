@@ -1,0 +1,239 @@
+/* loacalyy hosted fonts */
+@font-face {
+  font-family: "Cantarell";
+  src: url(resources/fonts/cantarell-regular-webfont.woff2);
+}
+@font-face {
+  font-family: "Aboreto";
+  src: url(resources/fonts/aboreto-regular-webfont.woff2);
+}
+
+body
+{
+    margin: 0;
+}
+.section
+{
+    height: 850px;
+}
+.aboreto {
+  font-family: "Aboreto", serif;
+}
+a {
+  text-decoration: none;
+}
+.current {
+  color: #ffe5b4;
+  margin: 20px 10px;
+}
+/* navigation bar */
+.nav
+{
+    display: flex;
+    align-items: center;
+    height: 160px;
+}
+#nav-bar{
+    display: block;
+    top: 0;
+    transition: top 0.3s;
+}
+.logo-txt
+{
+    font-size: 80px;
+    color: #ffffff;
+}
+.slogan
+{
+    color: #D4AF37;
+    margin-left: 22px;
+}
+.nav-main
+{
+    background-color: #0c2d1c;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    z-index: 2;
+    width: 100%;
+}
+.nav-buttons
+{
+   display: flex;
+   align-items: end; 
+}
+
+.navnav:hover
+{
+  color: #FFE5B4;
+  font-size: 17px;
+  transition: font-size ease 0.5s;
+}
+.navnav
+{
+    margin: 20px 10px;
+    color: #ffffff;
+    font-size: 16px;
+  transition: font-size ease 0.5s;
+}
+
+/* INDIVIDUAL PRODUCT CSS */
+.video-text
+{
+    font-size: 100px;
+    color: #ffffff;
+    display: flex;
+    align-self: flex-end;
+    position: absolute;
+    top: 650px;
+    opacity: 0.7;
+}
+.description
+{
+    line-height: 70px;
+    width: 700px;
+    font-size: 18px;
+}
+.prod-img:hover
+{
+    width: 551px;
+     height: 971px;
+}
+.inquire {
+    color: white;
+    background-color: #000000;
+    font-size: 24px;
+    padding: 5px 20px;
+    border-radius: 10px;
+    border: 0;
+    z-index: 1;
+  }
+  .inquire:hover{
+    background-color: white;
+    color: black;
+    border:1px solid #000000;
+  }
+  #inq-buts :hover {
+    background-color: white;
+    color: black;
+    border:1px solid #000000;
+  }
+  
+  .review-box
+  {
+    width: 450px;
+    height: 200px;
+    transition: ease-in-out 0.5s;
+    border: 0.1px solid black;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+  .review-box:hover
+  {
+    height: 210px;
+    width: 460px;
+    transition: ease-in-out 0.5s;
+  }
+  .review-img
+  {
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    margin-top: 20px;
+  }
+  .person
+  {
+    font-size: 20px;
+    margin-top: 30px;
+    margin-left: 10px;
+    font-weight: 900;
+  }
+  .stars
+  {
+    margin-top: 13px;
+    font-size: 20px;
+  }
+  .review
+  {
+    font-family: "Cantarell", serif;
+  }
+/* Footer */
+
+
+.footer{
+    height: 308px;
+    background-color: #0c2d1c;
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer-logo
+  {
+    color: #ffffff;
+    font-size: 80px;
+    margin: 10px 2px;
+  }
+  .icon-column
+  {
+    margin-left: 20px ;
+  }
+  .copyright
+  {
+    color: #ffffff;
+    font-size: 24px;
+    margin-left: 350px;
+  }
+  .footer-links
+  {
+    font-family: "Cantarell", serif;;
+    color: #ffffff;
+  }
+  .footer-topic
+  {
+    font-weight: bolder;
+    margin-bottom: 20px;
+  }
+  .footer-topic-links
+  {
+    color: #ffffff;
+    font-size: 16px;
+    transition: font-size ease-in-out 0.5s;
+  }
+  .footer-topic-links:hover
+  {
+    font-size: 17px;
+    transition: font-size ease-in-out 0.5s;
+  }
+  .footer-content :hover
+  {
+    color: #FFE5B4;
+   
+  }
+  .footer-content
+  {
+    margin: 10px 0;
+  }
+  .leave
+  {
+    font-size: 64px;
+  }
+  .leave-box
+  {
+    border-radius: 10px;
+    width: 500px;
+    padding-left: 5px;
+    padding-top: 5px;
+  }
+  ::placeholder
+  {
+    padding-left: 5px;
+  }
+  .error-msg {
+    color: #8b0000;
+    display: none;
+    font-size: 12px;
+    font-weight: 900;
+  }
+  

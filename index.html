@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="luxury watch, astronomia art, home page , overview"
+    />
+    <meta name="keywords" content="Watch, luxury,art, breif descriptions" />
+    <meta />
+
+    <!-- 
+    
+    Website display name
+    
+    -->
+    <title>ACE</title>
+    <!--
+    
+    favicon
+    
+    -->
+    <link rel="icon" href="resources/common/logo.png" />
+
+    <!--
+    
+    internal css
+    
+    -->
+
+    <style>
+      /* comonly used css */
+      .heading {
+        font-size: 64px;
+        font-family: "Aboreto", serif;
+        margin-left: 73px;
+        display: block;
+        padding-top: 70px;
+      }
+      .descriptions {
+        font-family: "Cantarell", serif;
+      }
+
+      /* Home video css */
+
+      .home-video-text {
+        color: #ffffff;
+        font-size: 40px;
+        position: absolute;
+        bottom: 380px;
+        left: 150px;
+      }
+      .more {
+        color: white;
+        background-color: #ffffff50;
+        font-size: 20px;
+        padding: 5px 20px;
+        border-radius: 10px;
+        border: 0;
+        z-index: 1;
+      }
+      #buts {
+        position: absolute;
+        bottom: 360px;
+        left: 150px;
+      }
+      #buts :hover {
+        position: relative;
+        top: 2px;
+        color: #ffe5b4;
+      }
+
+      /* Featured products */
+
+      .product-template {
+        width: 390px;
+        background-color: transparent;
+        display: flex;
+        position: relative;
+        justify-content: center;
+        margin: 0 155px;
+        margin-top: 50px;
+      }
+      .product-image {
+        width: 281px;
+        height: 476px;
+        transition: width ease-in-out 4s;
+        transition: height ease-in-out 1s;
+      }
+      .product-image:hover {
+        width: 291px;
+        height: 486px;
+        transition: width ease-in-out 1s;
+        transition: height ease-in-out 1s;
+      }
+      .prod-desc {
+        font-family: "Aboreto", serif;
+        position: absolute;
+        top: 20px;
+      }
+      .prod-butt {
+        color: white;
+        background-color: #000000;
+        font-size: 20px;
+        padding: 5px 20px;
+        border-radius: 10px;
+        border: 0;
+        z-index: 1;
+      }
+      #prod-buts {
+        position: absolute;
+        top: 430px;
+      }
+      #prod-buts:hover {
+        top: 432px;
+      }
+      .prod-butt:hover {
+        color: #000000;
+        background-color: #ffffff;
+        border: 1px solid black;
+      }
+
+      /* blog section */
+
+      .blog {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 70px;
+      }
+
+      .blog-img {
+        height: 400px;
+        width: 400px;
+        border-radius: 100%;
+        margin-right: 150px;
+      }
+      .blogHead {
+        font-size: 40px;
+        display: flex;
+        justify-content: flex-start;
+        margin-left: 100px;
+        font-weight: bolder;
+      }
+      .blog-content {
+        margin-left: 100px;
+        width: 800px;
+        margin-top: 20px;
+        font-family: "Cantarell", serif;
+        font-size: 24px;
+      }
+      /*
+      
+      Know about our inspirations section 
+      
+      */
+      .research-redirect {
+        width: 300px;
+        transition: width ease-in-out 1s;
+      }
+      .research-redirect:hover {
+        width: 320px;
+        transition: width ease-in-out 1s;
+      }
+      .trust:hover {
+        width: 250px !important;
+      }
+      .common:hover {
+        filter: drop-shadow(0 0 20px #ffea60);
+      }
+      .richi:hover {
+        filter: drop-shadow(0 0 15px #ffea60);
+      }
+      /* 
+      
+      Meet the team
+      
+      */
+      .meet {
+        color: white;
+        background-color: #000000;
+        font-size: 20px;
+        padding: 5px 20px;
+        border-radius: 10px;
+        border: 0;
+        z-index: 1;
+      }
+      #meetbuts {
+        position: absolute;
+        bottom: 360px;
+      }
+      #meetbuts :hover {
+        color: #000000;
+        background-color: #ffffff;
+        border: 1px solid black;
+      }
+    </style>
+    <!-- 
+
+external css link
+
+-->
+    <link rel="stylesheet" href="common.css" />
+  </head>
+  <body>
+    <!-- 
+    
+    nav bar
+    
+    -->
+    <nav>
+      <div id="nav">
+        <div class="nav-main">
+          <div class="nav" style="margin-left: 8px">
+            <img
+              src="resources/common/logo.png"
+              alt="logo"
+              style="width: 81px; height: 103px"
+            />
+            <h1 class="aboreto logo-txt">ACE</h1>
+            <!--
+            
+            slogan
+            
+            -->
+            <h1 class="aboreto slogan">
+              MASTERING
+              <span style="color: #ffffff"
+                >TIME,<br />
+                REDEFINING</span
+              ><br />
+              STYLE.
+            </h1>
+          </div>
+
+          <!--
+          
+          nav buttons
+          
+          -->
+          <div class="nav-buttons">
+            <a href="index.html" class="aboreto current">HOME</a>
+            <a href="blog.html" class="aboreto navnav">BLOG</a>
+            <a href="product.html" id="navnav" class="aboreto navnav"
+              >PRODUCTS</a
+            >
+            <a href="research.html" id="navnav" class="aboreto navnav"
+              >RESEARCH</a
+            >
+            <a href="about_us.html" id="navnav" class="aboreto navnav"
+              >ABOUT US</a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- 
+
+    First section
+    
+    -->
+    <div style="text-align: left; position: relative">
+      <video
+        src="resources/home/jacobb.mp4"
+        loop
+        autoplay
+        muted
+        style="
+          height: 865px;
+          width: 100%;
+          object-fit: cover; /*Makes sure that the video completely fills the screen*/
+          z-index: -1;
+        "
+      ></video>
+      <h1 class="home-video-text aboreto">
+        CRAFTING TIMEPIECES <br />THAT EMBODY PRECISION, ELEGANCE,<br />
+        AND THE SPIRIT OF EXCELLENCE.
+      </h1>
+      <a id="buts" href="product.html"
+        ><button class="more aboreto">LEARN MORE</button></a
+      >
+    </div>
+    <!-- 
+
+    Featured section
+    
+    -->
+    <div style="height: 850px">
+      <div>
+        <!-- 
+    
+         heading
+    
+         -->
+        <h1 class="heading">
+          FROM OUR FINEST <br />
+          COLLECTION
+        </h1>
+      </div>
+      <div style="display: flex; justify-content: space-between">
+        <div class="product-template">
+          <img
+            class="product-image"
+            src="resources/home/Casino tourbillion.avif"
+            alt="tourbillion"
+          />
+          <h1 class="prod-desc">CASINO TOURBILLON</h1>
+          <a id="prod-buts" href="product.html"
+            ><button class="prod-butt aboreto">LEARN MORE</button></a
+          >
+        </div>
+        <div class="product-template">
+          <img
+            class="product-image"
+            src="resources/home/buggaa.avif"
+            alt="Bugatti Tourbillon"
+          />
+          <h1 class="prod-desc">BUGATTI TOURBILLON</h1>
+          <a id="prod-buts" href="product.html"
+            ><button class="prod-butt aboreto">LEARN MORE</button></a
+          >
+        </div>
+      </div>
+    </div>
+    <!-- 
+
+    featured blog section
+    
+    -->
+    <div class="section">
+      <!-- 
+    
+       heading
+    
+       -->
+      <h1 class="heading">POPULAR BLOGS</h1>
+      <div class="blog" style="height: 600px">
+        <div
+          style="display: flex; flex-direction: column; justify-content: left"
+        >
+          <div class="blogHead aboreto">
+            • USE OF TECHNOLOGY IN WATCH INDUSTRY
+          </div>
+          <div class="blog-content">
+            21st Century also referred as the age of Information and Technology
+            has given a turnaround within the entire world. The way of living is
+            highly affected due to transformation of our lives with the help of
+            technology. Watch industry which has been associated to a symbol of
+            luxury, fashion, intelligence, and a key component of our lives is
+            getting a blend of technology to innovate a watch into a productive
+            device Technology associated with watch may or may not be preferred
+            by many people but slowly it’s adaptation can be seen
+            <a href="blog.html"><u>around...</u></a>
+          </div>
+        </div>
+
+        <div>
+          <img class="blog-img" src="resources/home/i watch.png" alt="" />
+        </div>
+      </div>
+      <!-- 
+        
+        Know our inspiration section  
+        
+        -->
+      <div class="section">
+        <h1
+          class="heading"
+          style="width: 550px; padding-top: 0; line-height: 1.2"
+        >
+          LEARN WHAT INSPIRES US.
+        </h1>
+        <div
+          style="
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            margin-top: 150px;
+          "
+        >
+          <a href="research.html#nav"
+            ><img
+              class="research-redirect common"
+              src="resources/research/rolly.png"
+              alt=""
+          /></a>
+          <a href="research.html#home"
+            ><img
+              class="research-redirect richi"
+              src="resources/research/richie.png "
+              alt=""
+          /></a>
+          <a href="research.html#feat"
+            ><img
+              class="research-redirect common"
+              src="resources/research/jacoo.png"
+              alt=""
+          /></a>
+          <a href="research.html#foot"
+            ><img
+              class="research-redirect common"
+              src="resources/research/titann.jpg"
+              alt=""
+          /></a>
+          <a href="research.html#rev"
+            ><img
+              class="research-redirect trust common"
+              style="width: 220px"
+              src="resources/research/trust trans.png"
+              alt=""
+          /></a>
+        </div>
+      </div>
+      <!--
+
+        Meet the team section
+        
+        -->
+      <div style="text-align: center; position: relative">
+        <!-- 
+    
+         heading
+    
+         -->
+        <h1 class="heading" style="margin: 20px 0">MEET THE TEAM</h1>
+        <h1 class="descriptions" style="position: relative; top: 20px">
+          Meet the talented individuals behind our success
+        </h1>
+        <div style="display: flex; justify-content: center">
+          <a id="meetbuts" href="about_us.html"
+            ><button class="meet aboreto">THE TEAM</button></a
+          >
+        </div>
+
+        <img
+          src="resources/home/team.png"
+          alt=""
+          style="
+            object-fit: cover;
+            width: 100%;
+            z-index: -1;
+            position: relative;
+            height: 40%;
+          "
+        />
+      </div>
+      <!-- 
+      
+      Footer 
+      
+      -->
+      <footer>
+        <div class="footer">
+          <div style="display: flex; flex-direction: column; margin-left: 20px">
+            <div style="display: flex">
+              <img
+                src="resources/common/logo.png"
+                alt="logo"
+                style="height: 93px; width: 81px; margin-top: 10px"
+              />
+              <h1 class="aboreto footer-logo">ACE</h1>
+            </div>
+            <!-- 
+            
+            icon columns
+            
+            -->
+            <div class="icon-column">
+              <a href=""
+                ><img src="resources/common/Instagram Circle.png" alt=""
+              /></a>
+              <a href=""><img src="resources/common/Facebook.png" alt="" /></a>
+              <a href=""><img src="resources/common/X.png" alt="" /></a>
+              <a href=""
+                ><img src="resources/common/LinkedIn 2.png" alt=""
+              /></a>
+            </div>
+          </div>
+          <div style="display: flex">
+            <!-- 
+            
+            copy right text
+            
+            -->
+            <h1 class="aboreto copyright" style="align-self: flex-end">
+              ©2025-ACE | ALL RIGHTS RESERVED
+            </h1>
+          </div>
+          <!-- 
+          
+          footer navs
+          
+          -->
+          <div
+            style="
+              display: flex;
+              gap: 81px;
+              margin-right: 103px;
+              margin-top: 30px;
+            "
+          >
+            <div
+              class="footer-links"
+              style="display: flex; flex-direction: column"
+            >
+              <div class="footer-topic">Explore</div>
+              <div class="footer-content">
+                <a class="footer-topic-links" href="research.html">Research</a>
+              </div>
+              <div class="footer-content">
+                <a class="footer-topic-links" href="about_us.html">Our Team</a>
+              </div>
+              <div class="footer-content">
+                <a class="footer-topic-links" href="">Tips</a>
+              </div>
+            </div>
+            <div
+              class="footer-links"
+              style="display: flex; flex-direction: column"
+            >
+              <div class="footer-topic">Company</div>
+              <div class="footer-content">
+                <a class="footer-topic-links" href="about_us.html">About us</a>
+              </div>
+              <div class="footer-content">
+                <a class="footer-topic-links" href="about_us.html"
+                  >Contact us</a
+                >
+              </div>
+            </div>
+            <div
+              class="footer-links"
+              style="display: flex; flex-direction: column"
+            >
+              <div class="footer-topic">Policy</div>
+              <div class="footer-content">
+                <a class="footer-topic-links" href="">Terms & Condition</a>
+              </div>
+              <div class="footer-content">
+                <a class="footer-topic-links" href="">Privacy</a>
+              </div>
+              <div class="footer-content">
+                <a class="footer-topic-links" href="">FAQ</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

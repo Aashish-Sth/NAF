@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="about the team" />
+    <meta name="keywords" content="team, about us" />
+    <meta />
+    <!-- 
+    
+    Website display name
+    
+    -->
+    <title>ACE</title>
+
+    <!--
+    
+    favicon
+    
+    -->
+    <link rel="icon" href="resources/common/logo.png" />
+
+    <style>
+      /* title css */
+      .heading-about {
+        font-size: 45px;
+        margin-left: 40px;
+        margin-top: 60px;
+      }
+      /* member cards  */
+      .prof-body {
+        margin-top: 80px;
+      }
+      .profile-template {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+      }
+      .profile-img {
+        border-radius: 100%;
+        width: 338px;
+        height: 338px;
+      }
+      .team-info {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+      }
+      .personal {
+        margin: 5px 0px;
+        font-family: "Cantarell", serif;
+        font-size: 20px;
+      }
+
+      .prof-more {
+        color: #ffffff;
+        background-color: #0c2d1c;
+        font-size: 20px;
+        padding: 5px 20px;
+        border-radius: 10px;
+        border: 0;
+      }
+      #prof-buts :hover {
+        color: #000000;
+        background-color: #ffffff;
+        border: 1px solid black;
+      }
+      /* form */
+      .form-txt {
+        margin-left: 170px;
+      }
+      .txt-box {
+        width: 510px;
+        height: 20px;
+        border-radius: 5px;
+        padding: 5px 0;
+      }
+      .form-identifier {
+        margin-bottom: 4px;
+        font-weight: bolder;
+      }
+      /* form  buuton*/
+      .form-but {
+        color: white;
+        background-color: #0c2d1c;
+        font-size: 24px;
+        font-weight: bold;
+        padding: 5px 20px;
+        border-radius: 10px;
+        border: 0;
+        margin-bottom: 30px;
+      }
+      #form-buts :hover {
+        background-color: white;
+        color: #0c2d1c;
+        border: 1px solid #000000;
+      }
+    </style>
+    <!--
+    
+    external css
+    
+    -->
+    <link rel="stylesheet" href="common.css" />
+  </head>
+  <body>
+    <!--
+    
+    nav bar
+    
+    -->
+    <nav>
+      <div id="nav">
+        <div class="nav-main">
+          <div class="nav" style="margin-left: 8px">
+            <img
+              src="resources/common/logo.png"
+              alt="logo"
+              style="width: 81px; height: 103px"
+            />
+            <h1 class="aboreto logo-txt">ACE</h1>
+            <!--
+            
+            slogan
+            
+            -->
+            <h1 class="aboreto slogan">
+              MASTERING
+              <span style="color: #ffffff"
+                >TIME,<br />
+                REDEFINING</span
+              ><br />
+              STYLE.
+            </h1>
+          </div>
+          <!--
+          
+          nav buttons
+          
+          -->
+          <div class="nav-buttons">
+            <a href="index.html" class="aboreto navnav">HOME</a>
+            <a href="blog.html" class="aboreto navnav">BLOG</a>
+            <a href="product.html" id="navnav" class="aboreto navnav"
+              >PRODUCTS</a
+            >
+            <a href="research.html" id="navnav" class="aboreto navnav"
+              >RESEARCH</a
+            >
+            <a href="about_us.html" id="navnav" class="aboreto current"
+              >ABOUT US</a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- 
+    
+    heading
+    
+    -->
+    <div><h1 class="heading-about aboreto">GET TO KNOW OUR TEAM</h1></div>
+    <div class="section prof-body">
+      <div style="display: flex; justify-content: space-around">
+        <div class="profile-template">
+          <img
+            class="profile-img"
+            src="resources/about_us/Aashish.jpg"
+            alt=""
+          />
+          <div class="team-info">
+            <h1 class="personal">Aashish Shrestha</h1>
+            <p class="personal" style="font-size: 20px">Team Leader</p>
+            <p class="personal">A student at Islington College.</p>
+            <a id="prof-buts" href="aashish.html"
+              ><button class="prof-more personal">
+                Learn More<!-- redirecting anchored button -->
+              </button></a
+            >
+          </div>
+        </div>
+        <div class="profile-template">
+          <img
+            class="profile-img"
+            src="resources/about_us/sudhanshu.jpg"
+            alt=""
+          />
+          <div class="team-info">
+            <h1 class="personal">Sudhaanshu Thapa</h1>
+            <p class="personal" style="font-size: 20px">Team Member</p>
+            <p class="personal">A student at Islington College.</p>
+            <a id="prof-buts" href="sudhanshu.html"
+              ><button class="prof-more personal">
+                Learn More<!-- redirecting anchored button -->
+              </button></a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="section prof-body" style="margin-top: 180px; height: 650px">
+        <div style="display: flex; justify-content: space-around">
+          <div class="profile-template">
+            <img
+              class="profile-img"
+              src="resources/about_us/Diamond.jpg"
+              alt=""
+            />
+            <div class="team-info">
+              <h1 class="personal">Diamond K.C</h1>
+              <p class="personal" style="font-size: 20px">Team Member</p>
+              <p class="personal">A student at Islington College.</p>
+              <a id="prof-buts" href="diamond.html"
+                ><button class="prof-more personal">
+                  Learn More<!-- redirecting anchored button -->
+                </button></a
+              >
+            </div>
+          </div>
+          <div class="profile-template">
+            <img
+              class="profile-img"
+              src="resources/about_us/shreeya.jpg"
+              alt=""
+            />
+            <div class="team-info">
+              <h1 class="personal">Shreeya Tandukar</h1>
+              <p class="personal" style="font-size: 20px">Team Member</p>
+              <p class="personal">A student at Islington College.</p>
+              <a id="prof-buts" href="shreeya.html"
+                ><button class="prof-more personal">
+                  Learn More<!-- redirecting anchored button -->
+                </button></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 
+      
+      Feedback section
+      
+      -->
+      <div style="height: 600px">
+        <div class="aboreto heading-about form-txt">SHARE YOUR FEEDBACK</div>
+        <p class="form-txt" style="font-family: Cantarell; font-size: 20px">
+          We value your feedback. Let us know how we can improve :)
+        </p>
+        <div style="display: flex; justify-content: center; padding-top: 100px">
+          <div class="aboreto">
+            <div
+              style="
+                display: flex;
+                justify-content: flex-start;
+                flex-direction: column;
+              "
+            >
+              <!-- 
+            
+            Form
+             
+            -->
+
+              <form name="feedback-form">
+                <p class="form-identifier">NAME</p>
+                <input
+                  class="txt-box"
+                  name="Name"
+                  placeholder="Enter your name"
+                  type="text"
+                />
+                <span id="errName" class="aboreto error-msg"
+                  ><br />
+                  !!! PLEASE ENTER YOUR NAME !!!</span
+                >
+                <p class="form-identifier">EMAIL</p>
+                <input
+                  class="txt-box"
+                  name="Email"
+                  placeholder="Enter your email"
+                  type="email"
+                />
+                <span id="errEemail" class="aboreto error-msg"
+                  ><br />
+                  !!! PLEASE ENTER YOUR EMAIL !!!</span
+                >
+                <p class="form-identifier">MESSAGE</p>
+                <textarea
+                  name="Message"
+                  id=""
+                  rows="5"
+                  cols="10"
+                  name="Message"
+                  class="txt-box"
+                  placeholder="Leave your message here"
+                  type="text"
+                  style="height: 80px"
+                ></textarea>
+                <span id="errMsg" class="aboreto error-msg"
+                  ><br />
+                  !!! WRITE IN A MESSAGE BEFORE YOU SUBMIT !!!</span
+                >
+              </form>
+              <br />
+              <!-- Button to trigger the valid() function -->
+              <div style="display: flex; justify-content: center">
+                <!-- 
+      
+      THANK YOU SECTION
+      
+      -->
+                <div
+                  style="
+                    display: none;
+                    justify-content: center;
+                    align-items: center;
+                    width: 100%;
+                    height: 140%;
+                    background-color: #ffffff50;
+                    z-index: 2;
+                    position: absolute;
+                    top: 1500px;
+                  "
+                  id="thanks"
+                >
+                  <div
+                    style="
+                      height: 330px;
+                      width: 400px;
+                      top: 23%;
+                      left: 32%;
+                      background-color: #ffffff;
+                      border-radius: 30px;
+                      display: flex;
+                      justify-content: center;
+                      align-items: center;
+                      border: 1px solid black;
+                    "
+                  >
+                    <img
+                      style="
+                        width: 150px;
+                        position: absolute;
+                        top: 325px;
+                        margin-bottom: 10px;
+                      "
+                      src="resources/product/review/tick.png"
+                      alt=""
+                    />
+                    <h1
+                      class="aboreto"
+                      style="
+                        color: #000000;
+                        text-align: center;
+                        line-height: 1.5;
+                        padding-top: 30px;
+                      "
+                    >
+                      THANK YOU! <br />
+
+                      FOR YOUR VALUABLE FEEDBACK
+                      <br />
+                      <button
+                        id="sub-buts"
+                        class="inquire aboreto"
+                        style="margin-top: 30px"
+                        onclick="back()"
+                      >
+                        OK
+                      </button>
+                    </h1>
+                  </div>
+                </div>
+                <a id="form-buts" href=""
+                  ><button
+                    type="button"
+                    class="form-but aboreto"
+                    onclick="valid()"
+                  >
+                    SUBMIT
+                  </button></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br />
+
+      <!-- 
+      
+      Footer 
+      
+      -->
+      <footer>
+        <div class="footer">
+          <div style="display: flex; flex-direction: column; margin-left: 20px">
+            <div style="display: flex">
+              <img
+                src="resources/common/logo.png"
+                alt="logo"
+                style="height: 93px; width: 81px; margin-top: 10px"
+              />
+              <h1 class="aboreto footer-logo">ACE</h1>
+            </div>
+            <!-- 
+            
+            icon columns
+            
+            -->
+            <div class="icon-column">
+              <a href=""
+                ><img src="resources/common/Instagram Circle.png" alt=""
+              /></a>
+              <a href=""><img src="resources/common/Facebook.png" alt="" /></a>
+              <a href=""><img src="resources/common/X.png" alt="" /></a>
+              <a href=""
+                ><img src="resources/common/LinkedIn 2.png" alt=""
+              /></a>
+            </div>
+          </div>
+          <div style="display: flex">
+            <!-- 
+            
+            copy right text
+            
+            -->
+            <h1 class="aboreto copyright" style="align-self: flex-end">
+              ©2025-ACE | ALL RIGHTS RESERVED
+            </h1>
+          </div>
+          <!-- 
+          
+          footer navs
+          
+          -->
+          <div
+            style="
+              display: flex;
+              gap: 81px;
+              margin-right: 103px;
+              margin-top: 30px;
+            "
+          >
+            <div
+              class="footer-links"
+              style="display: flex; flex-direction: column"
+            >
+              <div class="footer-topic">Explore</div>
+              <div class="footer-content">
+                <a class="footer-topic-links" href="research.html">Research</a>
+              </div>
+              <div class="footer-content">
+                <a class="footer-topic-links" href="about_us.html">Our Team</a>
+              </div>
+              <div class="footer-content">
+                <a class="footer-topic-links" href="">Tips</a>
+              </div>
+            </div>
+            <div
+              class="footer-links"
+              style="display: flex; flex-direction: column"
+            >
+              <div class="footer-topic">Company</div>
+              <div class="footer-content">
+                <a class="footer-topic-links" href="about_us.html">About us</a>
+              </div>
+              <div class="footer-content">
+                <a class="footer-topic-links" href="about_us.html"
+                  >Contact us</a
+                >
+              </div>
+            </div>
+            <div
+              class="footer-links"
+              style="display: flex; flex-direction: column"
+            >
+              <div class="footer-topic">Policy</div>
+              <div class="footer-content">
+                <a class="footer-topic-links" href="">Terms & Condition</a>
+              </div>
+              <div class="footer-content">
+                <a class="footer-topic-links" href="">Privacy</a>
+              </div>
+              <div class="footer-content">
+                <a class="footer-topic-links" href="">FAQ</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script>
+      //form validating function
+      function valid() {
+        event.preventDefault();
+        let name = document.forms["feedback-form"]["Name"].value;
+        let email = document.forms["feedback-form"]["Email"].value;
+        let message = document.forms["feedback-form"]["Message"].value;
+        let final = true;
+        if (name == "") {
+          document.getElementById("errName").style.display = "block";
+          final = false;
+        } else {
+          document.getElementById("errName").style.display = "none";
+        }
+        if (email == "") {
+          document.getElementById("errEemail").style.display = "block";
+          final = false;
+        } else {
+          document.getElementById("errEemail").style.display = "none";
+        }
+        if (message == "") {
+          document.getElementById("errMsg").style.display = "block";
+          final = false;
+        } else {
+          document.getElementById("errMsg").style.display = "none";
+        }
+        if (final == true) {
+          document.forms["feedback-form"].reset();
+          document.getElementById("thanks").style.display = "flex";
+          document.body.style.overflow = "hidden";
+        }
+      }
+      function back() {
+        document.getElementById("thanks").style.display = "none";
+        document.body.style.overflow = "auto";
+      }
+    </script>
+  </body>
+</html>

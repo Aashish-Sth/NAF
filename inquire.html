@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="reach out, inquiry, form" />
+    <meta name="keywords" content="get in touch, inquire" />
+    <meta />
+    <!-- 
+    
+    Website display name
+    
+    -->
+    <title>ACE</title>
+
+    <!--
+    
+    favicon
+    
+    -->
+
+    <link rel="icon" href="resources/common/logo.png" />
+    <!--
+    
+    external css
+    
+    -->
+    <link rel="stylesheet" href="common.css" />
+    <style>
+      .heading {
+        font-size: 64px;
+      }
+      .text-box {
+        width: 500px;
+        padding: 3px;
+        border-radius: 6px;
+        border: 0.1px solid black;
+        height: 30px;
+      }
+
+      #sub-buts:hover {
+        background-color: white;
+        color: black;
+        border: 1px solid #000000;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div id="nav">
+        <div class="nav-main">
+          <div class="nav" style="margin-left: 8px">
+            <img
+              src="resources/common/logo.png  "
+              alt="logo"
+              style="width: 81px; height: 103px"
+            />
+            <h1 class="aboreto logo-txt">ACE</h1>
+            <!--
+            
+            slogan
+            
+            -->
+            <h1 class="aboreto slogan">
+              MASTERING
+              <span style="color: #ffffff"
+                >TIME,<br />
+                REDEFINING</span
+              ><br />
+              STYLE.
+            </h1>
+          </div>
+          <!--
+          
+          nav buttons
+          
+          -->
+          <div class="nav-buttons">
+            <a href="index.html" class="aboreto navnav">HOME</a>
+            <a href="blog.html" class="aboreto navnav">BLOG</a>
+            <a href="product.html" id="navnav" class="aboreto navnav"
+              >PRODUCTS</a
+            >
+            <a href="research.html" id="navnav" class="aboreto navnav"
+              >RESEARCH</a
+            >
+            <a href="about_us.html" id="navnav" class="aboreto navnav"
+              >ABOUT US</a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!--
+    
+    Get in touch form
+     
+    -->
+    <div
+      style="
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      "
+    >
+      <h1 class="aboreto heading">GET IN TOUCH</h1>
+      <form name="reach-out">
+        <p class="aboreto">FIRST NAME</p>
+        <input
+          class="text-box"
+          type="text"
+          name="Fname"
+          placeholder="First name"
+        />
+        <span id="errFname" class="aboreto error-msg"
+          ><br />
+          !!! PLEASE ENTER YOUR FIRST NAME !!!</span
+        >
+        <p class="aboreto">LAST NAME</p>
+        <input
+          class="text-box"
+          type="text"
+          name="Lname"
+          placeholder="Last name"
+        />
+        <span id="errLname" class="aboreto error-msg"
+          ><br />
+          !!! PLEASE ENTER YOUR LAST NAME !!!</span
+        >
+        <p class="aboreto">EMAIL</p>
+        <input
+          class="text-box"
+          type="email"
+          name="Email"
+          placeholder="Your email"
+        />
+        <span id="errEmail" class="aboreto error-msg"
+          ><br />
+          !!! PLEASE ENTER YOUR EMAIL !!!</span
+        >
+        <p class="aboreto">CONTACT NUMBER</p>
+        <input
+          class="text-box"
+          type="tel"
+          name="Contact"
+          placeholder="Your contact number"
+        />
+        <span id="errContact" class="aboreto error-msg"
+          ><br />
+          !!! PLEASE ENTER YOUR CONTACT NUMBER !!!</span
+        >
+      </form>
+      <a id="inq-buts" href=""
+        ><button
+          type="button"
+          style="margin-top: 30px; margin-bottom: 30px"
+          class="inquire aboreto"
+          onclick="validate()"
+        >
+          SUBMIT
+        </button></a
+      >
+    </div>
+    <!-- 
+    
+    Sucessfully submitted screen
+    
+    -->
+    <div
+      style="
+        display: none;
+        justify-content: center;
+        width: 100%;
+        height: 129%;
+        background-color: #ffffff50;
+        z-index: 2;
+        position: absolute;
+        top: 0;
+      "
+      id="backToYou"
+    >
+      <div
+        style="
+          height: 400px;
+          width: 600px;
+          position: absolute;
+          top: 23%;
+          left: 32%;
+          background-image: url(resources/product/13.jpg);
+          border-radius: 30px;
+          display: block;
+          border: 1px solid black;
+        "
+      >
+        <h1
+          class="aboreto"
+          style="color: #000000; text-align: center; line-height: 1.5"
+        >
+          <span style="font-size: 60px">THANK YOU!</span> <br />
+          WE’VE NOTED YOUR DETAILS. <br /><br />
+          WE’LL REACH OUT TO <br />
+          YOU SOON. <br />
+          <button
+            id="sub-buts"
+            class="inquire aboreto"
+            style="margin-top: 30px"
+            onclick="normal()"
+          >
+            OK
+          </button>
+        </h1>
+      </div>
+    </div>
+
+    <!-- 
+      
+      Footer 
+      
+      -->
+    <footer>
+      <div class="footer">
+        <div style="display: flex; flex-direction: column; margin-left: 20px">
+          <div style="display: flex">
+            <img
+              src="resources/common/logo.png"
+              alt="logo"
+              style="height: 93px; width: 81px; margin-top: 10px"
+            />
+            <h1 class="aboreto footer-logo">ACE</h1>
+          </div>
+          <!-- 
+            
+            icon columns
+            
+            -->
+          <div class="icon-column">
+            <a href=""
+              ><img src="resources/common/Instagram Circle.png" alt=""
+            /></a>
+            <a href=""><img src="resources/common/Facebook.png" alt="" /></a>
+            <a href=""><img src="resources/common/X.png" alt="" /></a>
+            <a href=""><img src="resources/common/LinkedIn 2.png" alt="" /></a>
+          </div>
+        </div>
+        <div style="display: flex">
+          <!-- 
+            
+            copy right text
+            
+            -->
+          <h1 class="aboreto copyright" style="align-self: flex-end">
+            ©2025-ACE | ALL RIGHTS RESERVED
+          </h1>
+        </div>
+        <!-- 
+          
+          footer navs
+          
+          -->
+        <div
+          style="
+            display: flex;
+            gap: 81px;
+            margin-right: 103px;
+            margin-top: 30px;
+          "
+        >
+          <div
+            class="footer-links"
+            style="display: flex; flex-direction: column"
+          >
+            <div class="footer-topic">Explore</div>
+            <div class="footer-content">
+              <a class="footer-topic-links" href="research.html">Research</a>
+            </div>
+            <div class="footer-content">
+              <a class="footer-topic-links" href="about_us.html">Our Team</a>
+            </div>
+            <div class="footer-content">
+              <a class="footer-topic-links" href="">Tips</a>
+            </div>
+          </div>
+          <div
+            class="footer-links"
+            style="display: flex; flex-direction: column"
+          >
+            <div class="footer-topic">Company</div>
+            <div class="footer-content">
+              <a class="footer-topic-links" href="about_us.html">About us</a>
+            </div>
+            <div class="footer-content">
+              <a class="footer-topic-links" href="about_us.html">Contact us</a>
+            </div>
+          </div>
+          <div
+            class="footer-links"
+            style="display: flex; flex-direction: column"
+          >
+            <div class="footer-topic">Policy</div>
+            <div class="footer-content">
+              <a class="footer-topic-links" href="">Terms & Condition</a>
+            </div>
+            <div class="footer-content">
+              <a class="footer-topic-links" href="">Privacy</a>
+            </div>
+            <div class="footer-content">
+              <a class="footer-topic-links" href="">FAQ</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script>
+      // form validating function
+
+      function validate() {
+        event.preventDefault();
+        let Fname = document.forms["reach-out"]["Fname"].value;
+        let Lname = document.forms["reach-out"]["Lname"].value;
+        let Email = document.forms["reach-out"]["Email"].value;
+        let Contact = document.forms["reach-out"]["Contact"].value;
+        let final = true;
+        if (Fname == "") {
+          document.getElementById("errFname").style.display = "block";
+          final = false;
+        } else {
+          document.getElementById("errFname").style.display = "none";
+        }
+        if (Lname == "") {
+          document.getElementById("errLname").style.display = "block";
+          final = false;
+        } else {
+          document.getElementById("errLname").style.display = "none";
+        }
+        if (Email == "") {
+          document.getElementById("errEmail").style.display = "block";
+          final = false;
+        } else {
+          document.getElementById("errEmail").style.display = "none";
+        }
+        if (Contact == "") {
+          document.getElementById("errContact").style.display = "block";
+          final = false;
+        } else {
+          document.getElementById("errContact").style.display = "none";
+        }
+        if (final == true) {
+          document.getElementById("backToYou").style.display = "flex";
+          document.body.style.overflow = "hidden";
+          document.forms["reach-out"].reset();
+        }
+      }
+      function normal() {
+        document.getElementById("backToYou").style.display = "none";
+        document.body.style.overflow = "auto";
+      }
+    </script>
+  </body>
+</html>
